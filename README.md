@@ -41,6 +41,7 @@ How to setup it up
   * Import the configuration file into BetterTouchTool and swap out the "Launch Path" for the location of your Python executable
   * Add the [plist file](com.example.mattermost.plist) to your ``~/Library/LaunchAgents`` folder (I would swap out ``example`` with your username though, both in the file name and in the file itself)
   * Add the [daemon script](mattermost_daemon.py) to your ``~/Scripts/`` folder
+  * Add a ``config.ini`` file matching the stricture of the [example config](example_config.ini) to ``/etc/mattermost_daemon/``, but with your own info
   
 This may require a restart in order to trigger the plist file to be launched properly, but it should also be able to be started by running ``launchctl start com.example.mattermost``
   
